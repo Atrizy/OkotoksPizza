@@ -4,4 +4,51 @@
 
 #main_body {
   display: grid;
+  position: relative;
+  grid-auto-flow: row;
+  place-items: center;
+  row-gap: 30px;
+
+  img {
+    width: 75vw;
+    height: 35vh;
+    align-self: center;
+    justify-self: center;
+    transition: 0.2s ease-in-out;
+    filter: blur(5px);
+  }
+
+  img:hover {
+    filter: blur(4px);
+  }
+
+  a {
+    border: white solid 2px;
+    width: 75vw;
+  }
+}
+
+#main_body {
+  p {
+    font-family: $font_family;
+    font-size: $font_size;
+    color: white;
+  }
+  div {
+    display: grid;
+    pointer-events: none;
+    z-index: 9;
+    position: absolute;
+    place-items: center;
+    width: 75vw;
+    height: 35vh;
+  }
+
+  div:nth-child(1) {
+    top: 5px;
+  }
+
+  div:nth-child(3) {
+    top: calc(35vh + 40px);
+  }
 }
