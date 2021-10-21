@@ -16,3 +16,13 @@ iframe {
 body {
   background-color: $background_color;
 }
+
+hr {
+  border-style: solid;
+  width: 75%;
+  border-width: 1px;
+  margin-left: 12.5%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-color: rgb(182, 155, 0);
+}

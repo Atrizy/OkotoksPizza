@@ -1,33 +1,41 @@
 #mobile_footer {
   display: grid;
-  padding-top: 50px;
+  grid-auto-flow: row;
   padding-bottom: 50px;
 
-  a {
-    font-family: $font_family;
-    color: $font_color;
-    text-decoration: none;
-    font-size: 16px;
-    margin-bottom: 10px;
-    margin-left: 13px;
-    transition: 0.2s ease-in-out;
-  }
-
-  a:hover {
-    color: red;
-  }
-
   p {
+    font-weight: bold;
+    justify-self: center;
     color: $font_color;
     font-family: $font_family;
-    margin-bottom: 10px;
-    margin-left: 13px;
   }
 }
 
 #gmap {
   justify-self: center;
   align-self: center;
-  width: 90vw;
-  height: 15vh;
+  width: 95vw;
+  height: 25vh;
+}
+
+#nav_bar {
+  display: grid;
+  grid-auto-flow: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  a {
+    justify-self: center;
+    align-self: center;
+  }
+
+  img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+#copyright {
+  color: $font_color;
+  font-family: $font_family;
 }

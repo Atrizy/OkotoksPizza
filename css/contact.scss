@@ -1,0 +1,11 @@
+@import "global";
+@import "header";
+@import "footer";
+
+#contact_us {
+  display: grid;
+  margin-left: 7.5vw;
+  width: 85vw;
+  font-family: $font_family;
+  color: $font_color;
+}
