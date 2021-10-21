@@ -2,7 +2,7 @@
 @import "header";
 @import "footer";
 
-#main_body {
+#mobile_main_body {
   display: grid;
   position: relative;
   grid-auto-flow: row;
@@ -28,7 +28,7 @@
   }
 }
 
-#main_body {
+#mobile_main_body {
   p {
     font-family: $font_family;
     font-size: $font_size;
