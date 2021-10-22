@@ -22,7 +22,7 @@
   display: grid;
   grid-auto-flow: column;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   a {
     justify-self: center;
@@ -38,4 +38,12 @@
 #copyright {
   color: $font_color;
   font-family: $font_family;
+}
+
+@media only screen and (min-width: 1024px) {
+  #mobile_footer {
+    margin-left: 37.5vw;
+    width: 25vw;
+    height: 15vh;
+  }
 }
