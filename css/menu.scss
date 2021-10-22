@@ -4,9 +4,10 @@
 
 #menu_top {
   display: grid;
-  place-items: center;
   margin-top: 25px;
   margin-bottom: 25px;
+  margin-left: 24.5vw;
+  width: 50vw;
 
   h1 {
     padding-bottom: 6px;
@@ -17,22 +18,30 @@
 #menu_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-left: 12.5vw;
-  width: 75vw;
+  margin-left: 5%;
+  width: 90%;
   row-gap: 12px;
   column-gap: 8px;
+  overflow: hidden;
 }
 
 .menu_item {
+  display: grid;
+  place-items: center;
   padding: 20px;
   border: white solid 2px;
   background-color: rgb(97, 97, 97);
+
+  img {
+    width: 75vw;
+  }
 
   h5 {
     padding-bottom: 12px;
   }
 
   p {
+    max-width: 50vw;
     padding-top: 12px;
     text-align: center;
     font-size: 14px;

@@ -31,6 +31,7 @@
   width: 100%;
   text-align: left;
   display: grid;
+  overflow: hidden;
 
   transform: translateX(101vw);
   transition: all 0.3s ease-in-out;
@@ -129,8 +130,15 @@
   }
 
   #desktop_header {
+    width: 75vw;
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    grid-template-columns: 7fr 1fr 1fr 1fr;
+
+    #logo {
+      width: 60px;
+      height: 60px;
+    }
 
     a {
       font-family: $font_family;

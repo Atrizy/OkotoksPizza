@@ -12,6 +12,7 @@ iframe {
 
 body {
   background-color: #51566b;
+  overflow-x: hidden;
 }
 
 hr {
@@ -63,6 +64,7 @@ hr {
   text-align: left;
   display: -ms-grid;
   display: grid;
+  overflow: hidden;
   -webkit-transform: translateX(101vw);
           transform: translateX(101vw);
   -webkit-transition: all 0.3s ease-in-out;
@@ -171,10 +173,16 @@ hr {
     display: none;
   }
   #desktop_header {
+    width: 75vw;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 6fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    -ms-grid-columns: 7fr 1fr 1fr 1fr;
+        grid-template-columns: 7fr 1fr 1fr 1fr;
+  }
+  #desktop_header #logo {
+    width: 60px;
+    height: 60px;
   }
   #desktop_header a {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -257,7 +265,7 @@ hr {
   display: -ms-grid;
   display: grid;
   margin-left: 7.5vw;
-  width: 85vw;
+  width: 75vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
