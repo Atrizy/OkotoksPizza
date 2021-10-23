@@ -2,6 +2,13 @@
 @import "header";
 @import "footer";
 
+hr {
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 #mobile_main_body {
   display: grid;
   position: relative;

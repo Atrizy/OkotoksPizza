@@ -15,16 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-hr {
-  border-style: solid;
-  width: 75%;
-  border-width: 1px;
-  margin-left: 12.5%;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border-color: white;
-}
-
 #logo {
   height: 38px;
   width: 38px;
@@ -263,12 +253,64 @@ hr {
   }
 }
 
+hr {
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 #contact_us {
   display: -ms-grid;
   display: grid;
-  margin-left: 7.5vw;
+  margin-left: 12.5vw;
+  place-items: center;
   width: 75vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+}
+
+#contact_us h1 {
+  padding-bottom: 15px;
+  color: #ff9900;
+}
+
+#container {
+  display: -ms-grid;
+  display: grid;
+}
+
+.seperating_line {
+  width: 75vw;
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+.staff {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+}
+
+.staff h5 {
+  color: #ff9900;
+}
+
+.staff img {
+  margin-top: 10px;
+  width: 75vw;
+}
+
+.video_tour {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+}
+
+.video_tour iframe {
+  width: 75vw;
+  height: 50vw;
 }
 /*# sourceMappingURL=contact.css.map */

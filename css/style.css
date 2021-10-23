@@ -15,16 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-hr {
-  border-style: solid;
-  width: 75%;
-  border-width: 1px;
-  margin-left: 12.5%;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border-color: white;
-}
-
 #logo {
   height: 38px;
   width: 38px;
@@ -261,6 +251,13 @@ hr {
     width: 25vw;
     height: 15vh;
   }
+}
+
+hr {
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 #mobile_main_body {
