@@ -298,6 +298,14 @@ hr {
   width: 97%;
 }
 
+#menu_info_special {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  padding-top: 10px;
+  width: 97%;
+}
+
 .menu_item {
   display: -ms-grid;
   display: grid;
@@ -307,7 +315,10 @@ hr {
 }
 
 .menu_item img {
-  width: 75vw;
+  width: 55vw;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu_item h4 {
@@ -333,7 +344,7 @@ hr {
           align-items: center;
 }
 
-input {
+input[type="radio"] {
   display: none;
 }
 
@@ -368,6 +379,16 @@ label:nth-of-type(1) {
 }
 
 #Pasta:checked ~ section > #pasta_container {
+  display: -ms-grid;
+  display: grid;
+}
+
+#Drinks:checked ~ section > #drinks_container {
+  display: -ms-grid;
+  display: grid;
+}
+
+#Starters:checked ~ section > #starters_container {
   display: -ms-grid;
   display: grid;
 }
