@@ -194,11 +194,13 @@ hr {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    -webkit-transition: 200ms ease-in-out;
-    transition: 200ms ease-in-out;
+    -webkit-transition: 150ms ease-in-out;
+    transition: 150ms ease-in-out;
   }
   #desktop_header a:hover {
-    color: red;
+    color: #ff9900;
+    font-weight: bolder;
+    cursor: pointer;
   }
 }
 

@@ -15,8 +15,8 @@
   }
 }
 
-#menu_container {
-  display: grid;
+.menu_container {
+  display: none;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-left: 10%;
   width: 80%;
@@ -54,6 +54,29 @@
 
 .item_price {
   color: $price_color;
+  font-style: italic;
+  font-weight: bolder;
   justify-self: center;
   align-items: center;
+}
+
+input {
+  display: none;
+}
+
+label {
+  @include hover;
+  margin: 6px;
+}
+
+label:nth-of-type(1) {
+  margin-left: 21%;
+}
+
+#Pizza:checked ~ section > #pizza_container {
+  display: grid;
+}
+
+#Pasta:checked ~ section > #pasta_container {
+  display: grid;
 }

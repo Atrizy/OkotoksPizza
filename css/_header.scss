@@ -141,17 +141,7 @@
     }
 
     a {
-      font-family: $font_family;
-      font-size: large;
-      color: $font_color;
-      text-decoration: none;
-      align-self: center;
-      justify-self: center;
-      transition: 200ms ease-in-out;
-    }
-
-    a:hover {
-      color: red;
+      @include hover;
     }
   }
 }

@@ -4,6 +4,22 @@ $font_color: white;
 $price_color: rgb(255, 153, 0);
 $background_color: rgb(81, 86, 107);
 
+@mixin hover {
+  font-family: $font_family;
+  font-size: large;
+  color: $font_color;
+  text-decoration: none;
+  align-self: center;
+  justify-self: center;
+  transition: 150ms ease-in-out;
+
+  &:hover {
+    color: $price_color;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}
+
 * {
   font-family: $font_family;
   color: $font_color;
