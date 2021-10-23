@@ -11,7 +11,7 @@ iframe {
 }
 
 body {
-  background-color: #51566b;
+  background-image: url("/images/background.jpg");
   overflow-x: hidden;
 }
 
@@ -223,7 +223,7 @@ hr {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 95vw;
+  width: 75vw;
   height: 25vh;
 }
 
