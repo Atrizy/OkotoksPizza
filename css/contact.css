@@ -253,13 +253,6 @@ body {
   }
 }
 
-hr {
-  width: 75%;
-  margin-left: 12.5%;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
 #contact_us {
   display: -ms-grid;
   display: grid;
@@ -270,7 +263,10 @@ hr {
   color: white;
 }
 
-#contact_us h1 {
+.about_us {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   padding-bottom: 15px;
   color: #ff9900;
 }
@@ -281,8 +277,9 @@ hr {
 }
 
 .seperating_line {
-  width: 75vw;
-  margin-left: 0;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 
@@ -302,15 +299,17 @@ hr {
   width: 75vw;
 }
 
-.video_tour {
+.gallery_pictures {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   place-items: center;
 }
 
-.video_tour iframe {
+.gallery_pictures img {
+  border: 1px solid white;
   width: 75vw;
-  height: 50vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=contact.css.map */
