@@ -11,8 +11,17 @@ iframe {
 }
 
 body {
-  background-image: url("/images/background.jpg");
   overflow-x: hidden;
+}
+
+#fixed_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  background-image: url("/images/background.jpg");
+  width: 100%;
+  height: 100vh;
 }
 
 #logo {
@@ -193,6 +202,10 @@ body {
   }
 }
 
+#desktop_footer {
+  display: none;
+}
+
 #mobile_footer {
   display: -ms-grid;
   display: grid;
@@ -214,7 +227,6 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 75vw;
   height: 25vh;
 }
 
@@ -251,6 +263,16 @@ body {
   #desktop_footer {
     display: -ms-grid;
     display: grid;
+    width: 45vw;
+    margin-left: 27.5vw;
+  }
+  #desktop_footer hr {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  #desktop_footer #gmap {
+    width: 65%;
   }
   #desktop_footer #nav_bar {
     display: -ms-grid;
@@ -258,14 +280,22 @@ body {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  #desktop_footer #nav_bar ~ p {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-bottom: 10px;
+  }
 }
 
 #contact_us {
   display: -ms-grid;
   display: grid;
-  margin-left: 12.5vw;
+  margin-left: 12.5%;
   place-items: center;
-  width: 75vw;
+  width: 75%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }

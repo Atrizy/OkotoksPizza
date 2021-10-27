@@ -105,3 +105,15 @@ label:nth-of-type(1) {
 #Starter:checked ~ section > #starter_container {
   display: grid;
 }
+
+@media only screen and (min-width: 1024px) {
+  .menu_container {
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 20px;
+  }
+  hr {
+    width: 60vw;
+    margin-left: 20vw;
+  }
+}

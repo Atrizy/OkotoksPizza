@@ -64,3 +64,15 @@ input[type="submit"]:hover {
 #phone {
   color: black;
 }
+
+@media only screen and (min-width: 1024px) {
+  hr {
+    width: 60vw;
+    margin-left: 20vw;
+  }
+
+  .container {
+    width: 60vw;
+    margin-left: 20vw;
+  }
+}

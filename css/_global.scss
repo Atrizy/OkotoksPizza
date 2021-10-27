@@ -33,6 +33,15 @@ iframe {
 }
 
 body {
-  background-image: url("/images/background.jpg");
   overflow-x: hidden;
+}
+
+#fixed_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  background-image: url("/images/background.jpg");
+  width: 100%;
+  height: 100vh;
 }
