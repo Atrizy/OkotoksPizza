@@ -163,12 +163,11 @@ body {
     display: none;
   }
   #desktop_header {
-    width: 75vw;
+    width: 70vw;
     display: -ms-grid;
     display: grid;
-    place-items: center;
-    -ms-grid-columns: 7fr 1fr 1fr 1fr;
-        grid-template-columns: 7fr 1fr 1fr 1fr;
+    -ms-grid-columns: 8fr 1fr 1fr;
+        grid-template-columns: 8fr 1fr 1fr;
   }
   #desktop_header #logo {
     width: 60px;
@@ -247,9 +246,17 @@ body {
 
 @media only screen and (min-width: 1024px) {
   #mobile_footer {
-    margin-left: 37.5vw;
-    width: 25vw;
-    height: 15vh;
+    display: none;
+  }
+  #desktop_footer {
+    display: -ms-grid;
+    display: grid;
+  }
+  #desktop_footer #nav_bar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -276,6 +283,16 @@ body {
   display: grid;
 }
 
+.hours {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.hours h2 {
+  color: #ff9900;
+}
+
 .seperating_line {
   width: 80%;
   margin-left: 10%;
@@ -295,6 +312,7 @@ body {
 }
 
 .staff img {
+  border: 1px solid grey;
   margin-top: 10px;
   width: 75vw;
 }
@@ -307,7 +325,7 @@ body {
 }
 
 .gallery_pictures img {
-  border: 1px solid white;
+  border: 1px solid grey;
   width: 75vw;
   margin-top: 5px;
   margin-bottom: 5px;

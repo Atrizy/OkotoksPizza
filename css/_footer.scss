@@ -42,8 +42,14 @@
 
 @media only screen and (min-width: 1024px) {
   #mobile_footer {
-    margin-left: 37.5vw;
-    width: 25vw;
-    height: 15vh;
+    display: none;
+  }
+  #desktop_footer {
+    display: grid;
+
+    #nav_bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }

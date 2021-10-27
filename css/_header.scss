@@ -130,10 +130,9 @@
   }
 
   #desktop_header {
-    width: 75vw;
+    width: 70vw;
     display: grid;
-    place-items: center;
-    grid-template-columns: 7fr 1fr 1fr 1fr;
+    grid-template-columns: 8fr 1fr 1fr;
 
     #logo {
       width: 60px;

@@ -163,12 +163,11 @@ body {
     display: none;
   }
   #desktop_header {
-    width: 75vw;
+    width: 70vw;
     display: -ms-grid;
     display: grid;
-    place-items: center;
-    -ms-grid-columns: 7fr 1fr 1fr 1fr;
-        grid-template-columns: 7fr 1fr 1fr 1fr;
+    -ms-grid-columns: 8fr 1fr 1fr;
+        grid-template-columns: 8fr 1fr 1fr;
   }
   #desktop_header #logo {
     width: 60px;
@@ -247,17 +246,29 @@ body {
 
 @media only screen and (min-width: 1024px) {
   #mobile_footer {
-    margin-left: 37.5vw;
-    width: 25vw;
-    height: 15vh;
+    display: none;
+  }
+  #desktop_footer {
+    display: -ms-grid;
+    display: grid;
+  }
+  #desktop_footer #nav_bar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
 hr {
-  width: 75%;
-  margin-left: 12.5%;
+  width: 65%;
+  margin-left: 17.5%;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+#desktop {
+  display: none;
 }
 
 #mobile_main_body {
@@ -316,5 +327,85 @@ hr {
 
 #mobile_main_body div:nth-child(3) {
   top: calc(35vh + 40px);
+}
+
+@media only screen and (min-width: 1024px) {
+  #desktop {
+    display: -ms-grid;
+    display: grid;
+  }
+  #mobile {
+    display: none;
+  }
+  #desktop_main_body {
+    display: -ms-grid;
+    display: grid;
+    width: 50vw;
+    margin-left: 25vw;
+  }
+  .about_us {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    padding-bottom: 15px;
+    color: #ff9900;
+  }
+  #container {
+    display: -ms-grid;
+    display: grid;
+  }
+  .hours {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .hours h2 {
+    color: #ff9900;
+  }
+  .seperating_line {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .staff {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .staff h3 {
+    color: #ff9900;
+  }
+  .staff img {
+    border: 1px solid grey;
+    margin-top: 10px;
+    width: 50vw;
+  }
+  .staff_member {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    width: 65%;
+  }
+  .float_left {
+    margin-left: 10px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .gallery_pictures {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+  }
+  .gallery_pictures img {
+    border: 1px solid grey;
+    width: 64vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

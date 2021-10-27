@@ -22,6 +22,15 @@
   display: grid;
 }
 
+.hours {
+  display: grid;
+  place-items: center;
+
+  h2 {
+    color: $main_color;
+  }
+}
+
 .seperating_line {
   width: 80%;
   margin-left: 10%;
@@ -39,6 +48,7 @@
   }
 
   img {
+    border: 1px solid grey;
     margin-top: 10px;
     width: 75vw;
   }
@@ -50,7 +60,7 @@
   place-items: center;
 
   img {
-    border: 1px solid white;
+    border: 1px solid grey;
     width: 75vw;
 
     margin-top: 5px;
