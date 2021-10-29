@@ -19,7 +19,7 @@ hr {
 input[type="text"],
 select,
 textarea {
-  width: 100%;
+  width: 90%;
   padding: 13px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -45,12 +45,14 @@ input[type="submit"]:hover {
 .container {
   display: grid;
   place-items: center;
-  margin-left: 2.5vw;
-  width: 95%;
+  margin-left: 5%;
+  width: 90%;
   border-radius: 5px;
   background-color: rgb(95, 95, 95);
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #first_name {

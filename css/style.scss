@@ -9,6 +9,13 @@ hr {
   margin-bottom: 25px;
 }
 
+.seperating_line {
+  width: 65%;
+  margin-left: 17.5%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 #desktop {
   display: none;
 }
@@ -19,9 +26,11 @@ hr {
   grid-auto-flow: row;
   place-items: center;
   row-gap: 30px;
+  max-width: 75%;
+  margin-left: 12.5%;
 
   img {
-    width: 75vw;
+    width: 100%;
     height: 35vh;
     align-self: center;
     justify-self: center;
@@ -35,7 +44,7 @@ hr {
 
   a {
     border: white solid 2px;
-    width: 75vw;
+    width: 100%;
   }
 }
 
@@ -64,6 +73,13 @@ hr {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  #mobile_main_body {
+    max-width: 60%;
+    margin-left: 20%;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   #desktop {
     display: grid;
@@ -75,8 +91,10 @@ hr {
 
   #desktop_main_body {
     display: grid;
-    width: 50vw;
-    margin-left: 25vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 65vw;
+    margin-left: 17.5vw;
   }
 
   .about_us {
@@ -94,6 +112,8 @@ hr {
   .hours {
     display: grid;
     place-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     h2 {
       color: $main_color;
@@ -110,6 +130,8 @@ hr {
   .staff {
     display: grid;
     place-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     h3 {
       color: $main_color;
@@ -126,6 +148,7 @@ hr {
     display: grid;
     grid-auto-flow: column;
     width: 65%;
+    padding-top: 25px;
   }
 
   .float_left {
@@ -134,17 +157,29 @@ hr {
     align-self: center;
   }
 
+  .gallery_header {
+    display: grid;
+    place-items: center;
+    padding-bottom: 18px;
+  }
+
   .gallery_pictures {
     display: grid;
-    grid-auto-flow: row;
-    place-items: center;
+    width: 65%;
+    margin-left: 17.5%;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    grid-gap: 15px;
 
     img {
       border: 1px solid grey;
-      width: 64vw;
-
       margin-top: 5px;
       margin-bottom: 5px;
     }
+  }
+
+  .gallery_pic {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 }
