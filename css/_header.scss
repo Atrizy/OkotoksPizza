@@ -130,13 +130,22 @@
   }
 
   #desktop_header {
-    width: 70vw;
+    place-items: center;
+    width: 70%;
+    margin-left: 5%;
     display: grid;
-    grid-template-columns: 8fr 1fr 1fr;
+    grid-template-columns: 6.5fr 1.5fr 1fr 1fr;
 
     #logo {
       width: 60px;
       height: 60px;
+    }
+
+    h4 {
+      justify-self: start;
+      align-self: center;
+      font-weight: bold;
+      color: red;
     }
 
     a {

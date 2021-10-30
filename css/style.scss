@@ -51,6 +51,8 @@ hr {
   a {
     border: white solid 2px;
     max-width: 350px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -69,7 +71,7 @@ hr {
     width: 75vw;
     height: 35vh;
   }
-  img {
+  a {
     max-width: 350px;
   }
 
@@ -79,6 +81,7 @@ hr {
 
   div:nth-child(3) {
     top: calc(35vh + 40px);
+    max-width: 350px;
   }
 }
 
