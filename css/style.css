@@ -24,6 +24,14 @@ body {
   height: 100vh;
 }
 
+#fixed_mobile_icon {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  margin-left: 87vw;
+  bottom: 3%;
+}
+
 #logo {
   height: 38px;
   width: 38px;
@@ -316,6 +324,13 @@ hr {
   display: none;
 }
 
+.top {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: #ff9900;
+}
+
 #mobile_main_body {
   display: -ms-grid;
   display: grid;
@@ -348,7 +363,7 @@ hr {
 
 #mobile_main_body a {
   border: white solid 2px;
-  width: 100%;
+  max-width: 350px;
 }
 
 #mobile_main_body p {
@@ -366,6 +381,10 @@ hr {
   place-items: center;
   width: 75vw;
   height: 35vh;
+}
+
+#mobile_main_body img {
+  max-width: 350px;
 }
 
 #mobile_main_body div:nth-child(1) {

@@ -24,6 +24,14 @@ body {
   height: 100vh;
 }
 
+#fixed_mobile_icon {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  margin-left: 87vw;
+  bottom: 3%;
+}
+
 #logo {
   height: 38px;
   width: 38px;
@@ -442,6 +450,9 @@ label:nth-of-type(1) {
 }
 
 @media only screen and (min-width: 1024px) {
+  #fixed_mobile_icon {
+    display: none;
+  }
   .menu_container {
     width: 50%;
     margin-left: 25%;
