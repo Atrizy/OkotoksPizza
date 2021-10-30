@@ -62,6 +62,12 @@
       width: 65%;
     }
 
+    #review {
+      display: grid;
+      justify-self: center;
+      align-self: center;
+    }
+
     #nav_bar {
       display: grid;
       grid-template-columns: 1fr 1fr;

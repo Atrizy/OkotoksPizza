@@ -274,6 +274,14 @@ body {
   #desktop_footer #gmap {
     width: 65%;
   }
+  #desktop_footer #review {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
   #desktop_footer #nav_bar {
     display: -ms-grid;
     display: grid;
@@ -309,6 +317,7 @@ hr {
 
 #menu_top h1 {
   padding-bottom: 6px;
+  color: #ff9900;
   border-bottom: white solid 2px;
 }
 
