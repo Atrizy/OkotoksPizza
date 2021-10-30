@@ -511,13 +511,16 @@ hr {
   .staff img {
     border: 1px solid grey;
     margin-top: 10px;
-    width: 50vw;
+    width: 35vw;
+  }
+  .staff_header {
+    color: #ff9900;
   }
   .staff_member {
     display: -ms-grid;
     display: grid;
     grid-auto-flow: column;
-    width: 65%;
+    width: 45%;
     padding-top: 25px;
   }
   .float_left {
